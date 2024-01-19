@@ -17,6 +17,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @font-face {
+        font-family: Figtree-ExtraBold;
+        src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+      }
+      @font-face {
+        font-family: Figtree-SemiBold;
+        src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -26,18 +34,51 @@
       }
     </style>
   </head>
-  <body>
-    <div id="card">
-      <img src="" alt="" />
-      <div>Learning</div>
-      <div>Published 21 Dec 2023</div>
-      <h2>HTML & CSS fundations</h2>
+  <body class="h-screen bg-[#f4d04e] p-4">
+    <div
+      id="card"
+      class="m-auto bg-white border border-[#121212] max-w-80 p-5 rounded-2xl"
+    >
+      <img
+        src="assets/images/illustration-article.svg"
+        alt="card picture"
+        class="w-full rounded-xl"
+      />
+      <div
+        class="bg-[#f4d04e] my-3 px-2 py-1 rounded inline-block font-[Figtree-ExtraBold] text-xs"
+      >
+        Learning
+      </div>
+      <div class="text-xs">Published 21 Dec 2023</div>
+      <header class="py-3">
+        <a
+          href="#"
+          class="text-xl font-[Figtree-SemiBold] font-bold hover:text-[#f4d04e]"
+          >HTML & CSS fundations</a
+        >
+      </header>
+      <article>
+        <p class="text-[#808080] text-xs">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </article>
+      <footer class="pt-4 items-center">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="user avatar"
+          class="size-7 inline"
+        />
+        <span class="my-auto mx-1 text-sm font-bold font-[Figtree-SemiBold]"
+          >Greg Hooper</span
+        >
+      </footer>
     </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Mariuszkru">Mariuszkru</a>.
     </div>
   </body>
 </html>
